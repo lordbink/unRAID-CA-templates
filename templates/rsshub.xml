@@ -12,8 +12,8 @@
   <WebUI>http://[IP]:[PORT:1200]/</WebUI>
   <Icon>https://raw.githubusercontent.com/selfhosters/unRAID-CA-templates/master/templates/img/rsshub.png</Icon>
   <ExtraSearchTerms>rss feed generator atom podcast</ExtraSearchTerms>
-  <Config Name="Port" Target="1200" Default="1200" Mode="tcp" Description="RSSHub web and API port" Type="Port" Display="always" Required="true" Mask="false">1200</Config>
-  <Config Name="CACHE_EXPIRE" Target="CACHE_EXPIRE" Default="300" Mode="" Description="Cache expiry in seconds (default 300)" Type="Variable" Display="advanced" Required="false" Mask="false">300</Config>
-  <Config Name="CACHE_TYPE" Target="CACHE_TYPE" Default="memory" Mode="" Description="Cache type: memory or redis" Type="Variable" Display="advanced" Required="false" Mask="false">memory</Config>
-  <Config Name="NODE_ENV" Target="NODE_ENV" Default="production" Mode="" Description="Node environment" Type="Variable" Display="advanced-hide" Required="false" Mask="false">production</Config>
+  <Config Name="Port" Target="1200" Default="1200" Mode="tcp" Description="RSSHub web and API port" Type="Port" Display="always-hide" Required="true" Mask="false">1200</Config>
+  <Config Name="CACHE_EXPIRE" Target="CACHE_EXPIRE" Default="300" Description="Cache expiry in seconds (default 300)" Type="Variable" Display="advanced-hide" Required="true" Mask="false">300</Config>
+  <Config Name="CACHE_TYPE" Target="CACHE_TYPE" Default="memory|redis" Description="Cache type: memory or redis" Type="Variable" Display="advanced-hide" Required="true" Mask="false"/>
+  <Config Name="NODE_ENV" Target="NODE_ENV" Default="production" Description="Node environment" Type="Variable" Display="advanced-hide" Required="true" Mask="false">production</Config>
 </Container>
